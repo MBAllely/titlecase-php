@@ -8,8 +8,11 @@
 
 				$ignoreThese = ['and','a','the'];
 
-				foreach ($words as $word) {
-					if(in_array($word, $ignoreThese)){
+				foreach($words as $key => $word) {
+					if ($key == 0) {
+						$cap = ucfirst($word);
+						array_push($wordsCap, $cap);
+					} elseif (in_array($word, $ignoreThese)){
 						array_push($wordsCap, $word);
 					} else {
 					$cap = ucfirst($word);

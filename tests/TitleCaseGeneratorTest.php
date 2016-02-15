@@ -44,18 +44,18 @@
 			$this->assertEquals('Ride the Bunny', $result);
 		}
 
-		// function test_makeTitleCase_firstWord()
-		// {
-		// 	//Arrange
-		// 	$test_TitleCaseGenerator = new TitleCaseGenerator;
-		// 	$input = "the long walk";
-		//
-		// 	//Act
-		// 	$result = $test_TitleCaseGenerator->makeTitleCase($input);
-		//
-		// 	//Assert
-		// 	$this->assertEquals('The Long Walk', $result);
-		// }
+		function test_makeTitleCase_firstWord()
+		{
+			//Arrange
+			$test_TitleCaseGenerator = new TitleCaseGenerator;
+			$input = "the long walk";
+
+			//Act
+			$result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+			//Assert
+			$this->assertEquals('The Long Walk', $result);
+		}
 	}
 
 ?>
